@@ -6,4 +6,6 @@
 
 ## Описание
 
+Задания можно найти [здесь] (https://gist.github.com/vvscode/8b60049bc335bbc52a4c363f92820956)
+
 1. Решены [задачи](https://gist.github.com/vvscode/8b60049bc335bbc52a4c363f92820956) на типизацию.
