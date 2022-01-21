@@ -26,10 +26,7 @@ module.exports = {
     "import/no-unresolved": "off",
     "import/extensions": ["warn", "never"],
     "import/prefer-default-export": "off",
-    "class-methods-use-this": [
-      "error",
-      { exceptMethods: ["runTask", "addResult"] },
-    ],
+    "no-shadow": "off",
     "max-len": [
       "error",
       {
