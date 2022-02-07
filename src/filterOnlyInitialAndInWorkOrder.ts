@@ -4,8 +4,6 @@
 // Нужно заменить FIXME на правильный тип вычисленный на основе Order
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-type FIXME = any;
-
 type Order =
   | {
       state: "initial";
@@ -37,6 +35,8 @@ type Order =
       produceEstimate: Date;
       fullfillmentDate: Date;
     };
+
+type FIXME = Extract<Order, {state: "initial"} | {state: "inWork"}> | null;
 
 export const filterOnlyInitialAndInWorkOrder = (order: Order): FIXME => {
   if (order.state === "initial" || order.state === "inWork") {
